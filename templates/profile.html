@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/profile.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h2 class="navbar-logo">Logo</h2>
+
+            <div class="search-bar">
+                <form action="/search" method="GET" class="search-container">
+                    <input type="text" id="search" name="query" placeholder="Search users, posts, or hashtags..."
+                        required aria-label="Search">
+                    <button type="submit" class="search_icon" aria-label="Search Button">
+                        <img src="/images/search.svg" alt="Search">
+                    </button>
+                </form>
+            </div>
+
+            <div class="navbar-username">
+                <h5>@username</h5>
+            </div>
+
+            <img src="/images/profile photo.jpeg" alt="User's profile picture" class="navbar-profile-pic">
+
+        </div>
+    </nav>
+
+    <main>
+        <div class="left-sidebar">
+            <ul>
+                <div class="hamburger">
+                    <img src="/images/hamburger.svg" alt="Sidebar open/close button (Hamburger)">
+                </div>
+                <li><a href="/html/profile.html">Profile</a></li>
+                <li><a href="#messages">Messages</a></li>
+                <li><a href="#societies">Societies & Clubs</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="middle-container">
+            <div class="profile-container">
+                <div class="profile-header">
+                    <img src="/images/profile photo.jpeg" alt="Profile Photo" class="profile-photo">
+                    <div class="profile-info">
+                        <h2 class="username">Chintu</h2>
+                        <p class="bio">Web Developer | Tech Enthusiast | Traveler</p>
+                        <div class="stats">
+                            <span><strong>120</strong> Posts</span>
+                            <span><strong>500</strong> Followers</span>
+                            <span><strong>300</strong> Following</span>
+                        </div>
+                        <button class="edit-profile">Edit Profile</button>
+                        <button class="edit-profile">New Post</button>
+                    </div>
+                </div>
+                <div class=".posts-section">
+                    <h3 style="margin-top: 2%; margin-bottom:1%">Posts</h3>
+                    <div class="posts-grid">
+                        <div class="post">
+                            <!-- <img src="/images/pexels-skyriusmarketing-2224861.jpg" alt="post1">
+                        </div>
+                        <div class="post">
+                            <img src="/images/pexels-pixabay-355465.jpg" alt="">
+                        </div>
+                        <div class="post">
+                            <img src="/images/pexels-tnp-1464613945-29971353.jpg" alt="">
+                        </div>
+                        <div class="post">
+                            <img src="/images/photo_2025-01-20_15-08-42.jpg" alt="">
+                        </div>
+                        <div class="post">
+                            <img src="/images/pexels-realtoughcandy-11035396.jpg" alt="">
+                        </div>
+                        <div class="post">
+                            <img src="/images/pexels-peng-liu-45946-169647.jpg" alt="">
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+</body>
+
+</html>

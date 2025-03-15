@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beings</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <h2 class="navbar-logo">Logo</h2>
+
+            <div class="search-bar">
+                <form action="/search" method="GET" class="search-container">
+                    <input type="text" id="search" name="query" placeholder="Search users, posts, or hashtags..."
+                        required aria-label="Search">
+                    <button type="submit" class="search_icon" aria-label="Search Button">
+                        <img src="/images/search.svg" alt="Search">
+                    </button>
+                </form>
+            </div>
+
+            <div class="navbar-username">
+                <h5>@username</h5>
+            </div>
+
+            <img src="/images/profile photo.jpeg" alt="User's profile picture" class="navbar-profile-pic">
+
+        </div>
+    </nav>
+
+    <main>
+        <div class="left-sidebar">
+            <ul>
+                <div class="hamburger">
+                    <img src="/images/hamburger.svg" alt="Sidebar open/close button (Hamburger)">
+                </div>
+                <li><a href="/html/profile.html">Profile</a></li>
+                <li><a href="#messages">Messages</a></li>
+                <li><a href="#societies">Societies & Clubs</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="middle-container">
+
+            <div class="post-cards">
+
+                <div class="post-header">
+                    <img src="/images/profile photo.jpeg" alt="User Profile" class="profile-pic">
+                    <div class="user-info">
+                        <h4 class="username">Catman</h4>
+                        <p class="post-time">2 hours ago</p>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <div class="post-content">
+                    <img src="/images/profile photo.jpeg" alt="Post Image" class="card-post">
+                    <h5 class="post-text">Maggie Powder</h5>
+                </div>
+                <div class="post-footer">
+                    <button class="like-btn">Like</button>
+                    <button class="comment-btn">Comment</button>
+                    <button class="share-btn">Share</button>
+                </div>
+            </div>
+
+            <div class="post-cards">
+                <div class="post-header">
+                    <img src="/images/pexels-pixabay-355465.jpg" alt="User Profile" class="profile-pic">
+                    <div class="user-info">
+                        <h4 class="username">Shagun</h4>
+                        <p class="post-time">2 hours ago</p>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <img src="/images/pexels-pixabay-355465.jpg" alt="Post Image" class="card-post">
+                    <h5 class="post-text">This is a caption</h5>
+                </div>
+                <div class="post-footer">
+                    <button class="like-btn">Like</button>
+                    <button class="comment-btn">Comment</button>
+                    <button class="share-btn">Share</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right-sidebar">
+            <h2>IIESTs Buzz</h2>
+            <div class="buzz-cards">
+                <div class="buzz-header">
+                    <h3>Heading</h3>
+                </div>
+                <div class="buzz-content">
+                    <img src="/images/pexels-tnp-1464613945-29971353.jpg" alt="Post Image" class="buzz-post">
+                    <h5 class="buzz-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolorem veniam
+                        nemo repellat tempore ex quisquam tenetur atque labore, illo, aliquid nesciunt magnam quae
+                        architecto a possimus in tempora illum.</h5>
+                </div>
+            </div>
+            <div class="buzz-cards">
+                <div class="buzz-header">
+                    <h3>Heading</h3>
+                </div>
+                <div class="buzz-content">
+                    <img src="/images/pexels-skyriusmarketing-2224861.jpg" alt="Post Image" class="buzz-post">
+                    <h5 class="buzz-text">This is a caption</h5>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

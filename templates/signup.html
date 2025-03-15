@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="sign up ">
+    <meta name="keywords" content="sign up,beings,iiests,iiest ">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+
+
+    <style>
+        a {
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            background: color #311b92;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+
+</head>
+
+
+
+<body>
+    <!-- <div class="outer"> -->
+    <div class="logo">
+        <a href="homepage.html">
+            <img src="/images/iiestlogo3original.png" height="75px" width="75px">
+        </a>
+        <a id="about" href="aboutUs.html">About</a>
+        <a id="login" href="Loginpage.html">Log In</a>
+    </div>
+    <div class="inner">
+        <!-- 
+            <div id="beings2">
+                BEINGS
+            </div>  -->
+
+
+        <p id="create">
+            Create an Account
+        </p>
+
+
+        <main class="signupbody">
+
+            <form action="userinfo.html">
+
+                <p>
+                    <label for="Firstname" class="input-info">Firstname </label> <input type="text" id="myfirstname"
+                        placeholder="30 characters" required>
+                </p>
+
+                <p>
+                    <label for="Surname" class="input-info">Surname </label> <input type="text" id="mysurname" placeholder="30 characters">
+                </p>
+                <p>
+                    <label for="rollno" class="input-info">Enrollment no </label><input type="text" id="myroll"
+                        placeholder="Enrollment no." required>
+                </p>
+
+                <p>
+                    <label for="Email" class="input-info">Gsuite Id </label><input type="email" id="myemail" placeholder="Enter G-Suit ID"
+                        required>
+                </p>
+                <p>
+                    <label for="dob" class="input-info">Date of Birth </label><input type="date" id="dob">
+                </p>
+
+                <p>
+                    <label for="gender">
+                        <p class="input-info">Gender</p>
+                    </label>Male <input type="radio" name="mygender" class="radio-btn">Female<input type="radio"
+                        name="mygender" class="radio-btn">Other<input type="radio" name="mygender" class="radio-btn">
+                </p>
+
+
+                <p>
+                    <span><input type="reset" id="clear" value="Clear"></span>
+                </p>
+                <p>
+
+                    <a href="userinfo.html"><input type="submit" id="submit" value="Next &raquo;"></a>
+
+                </p>
+
+
+            </form>
+            
+
+        </main>
+
+    </div>
+    <!-- </div> -->
+
+
+
+
+
+
+
+
+    <script src="signup.js"></script>
+</body>
+
+
+</html>
