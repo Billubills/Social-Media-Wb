@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search_icon {
+  background-color: #007bff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search_icon img {
+  width: 16px;
+  height: 16px;
+}
+
+.navbar-username {
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #007BFF;
+}
+
+/* Main Layout */
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-sidebar {
+  position: fixed;
+  height: 60vh;
+  width: 15%;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: 2px solid black;
+
+}
+
+.hamburger {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 20px;
+}
+
+.left-sidebar ul li {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.left-sidebar ul li a {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.middle-container {
+  flex: 1;
+  margin-left: 17%;
+  margin-right: 27%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-sidebar {
+  position: fixed;
+  height: 70vh;
+  width: 25%;
+  right: 0;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  overflow-y:auto;
+  text-align: center;
+}
+
+.right-sidebar h2{
+  margin-top: 5%;
+}
+
+.buzz-header h3{
+  margin-top: 5%;
+}
+
+.buzz-cards{
+  border: 2px solid blue;
+  margin-top: 8%;
+  margin-left: 5%;
+  width: 90%;
+  /* height: 60%; */
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+.buzz-content{
+  padding: 15px;
+  height: 100%;
+}
+.buzz-content img{
+  border-radius: 8px;
+}
+.buzz-post{
+ width: 100%;
+ height: 80%;  
+}
+/* Post Cards */
+
+
+.post-cards {
+  width: 500px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-pic {
+  border: 2px solid #007BFF;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info .username {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.user-info .post-time {
+  font-size: 12px;
+  color: #888;
+}
+
+.follow-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 55%;
+}
+
+.post-content {
+  padding: 15px;
+}
+
+.post-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card-post {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 15px;
+  border-top: 1px solid #ddd;
+}
+
+.post-footer button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.post-footer button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .left-sidebar,
+  .right-sidebar {
+    display: none;
+  }
+
+  .middle-container {
+    margin: 0;
+  }
+}
+
+
+/* Left Side bar designing */
+
